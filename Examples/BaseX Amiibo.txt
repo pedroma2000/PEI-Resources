@@ -4,7 +4,7 @@ declare
     %rest:PUT("{$body}") 
     function page:create($body) {
        file:write("amiibo.xml",$body),
-       db:create('amiibo', 'amiibo.xml', "./"), (: Cria base de dados :)
+       db:create('amiibo', 'amiibo.xml', "./"), (: Cria Base De Dados :)
        update:output(web:redirect('/app/ok'))
 };
 
