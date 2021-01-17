@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <pizza>
+        <name>Veggie-Pizza</name>
+        <sigla>VEP</sigla>
+        <base>tiny</base>
+        <topping>
+            <ingredient>spinach</ingredient>
+            <ingredient>cheese</ingredient>
+            <ingredient>tomato sauce</ingredient>
+        </topping>
+        <price moeda="€">
+            <small>6.00</small>
+            <medium>8.00</medium>
+            <big>12.00</big>
+        </price>
+    </pizza>
+    
+    <pizza>
+        <name>Mozzarella-Pizza</name>
+        <sigla>MZP</sigla>
+        <base>crispy</base>
+        <topping>
+            <ingredient>cheese</ingredient>
+            <ingredient>oregano</ingredient>
+            <ingredient>onion sauce</ingredient>
+        </topping>
+        <price moeda="€">
+            <small>7.00</small>
+            <medium>8.50</medium>
+            <big>13.00</big>
+        </price>
+    </pizza>
+    
+    <pizza>
+        <name>Meat-Pizza</name>
+        <sigla>MP</sigla>
+        <base>lean</base>
+        <topping>
+            <ingredient>chicken</ingredient>
+            <ingredient>oregano</ingredient>
+            <ingredient>tomato sauce</ingredient>
+        </topping>
+        <price moeda="€">
+            <small>6.00</small>
+            <medium>9.00</medium>
+            <big>12.50</big>
+        </price>
+    </pizza>
+    
+    <pizza>
+        <name>ESTG-Pizza</name>
+        <sigla>ESTGP</sigla>
+        <base>tiny</base>
+        <topping>
+            <ingredient>spinach</ingredient>
+            <ingredient>cheese</ingredient>
+            <ingredient>tomato sauce</ingredient>
+            <ingredient>chicken</ingredient>
+        </topping>
+        <price moeda="€">
+            <small>6.00</small>
+            <medium>8.50</medium>
+            <big>15.00</big>
+        </price>
+    </pizza>
+</menu>

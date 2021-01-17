@@ -1,0 +1,26 @@
+1.1. A lista dos títulos (title) dos livros (book) escritos (lang) em “en-us”
+R.: /bookstore/book/title[@lang="en-us"]
+
+1.2. Quantos livros (book) estão escritos (lang) em "en-us"?
+R.: count(/bookstore/book/title[@lang="en-us"])
+
+1.3. A lista dos autores (author) com o apelido "Laurentiis";
+R.: /bookstore/book[contains(author, 'Laurentiis')]/author/text()
+
+1.4. A lista dos títulos (title) dos livros (book) com um preço (price) superior a 30;
+R.: /bookstore/book[price>30]/title/text()
+
+1.5. O último nodo da bookstore;
+R.: /bookstore/book[last()]
+
+1.6. O primeiro nodo da bookstore; 
+R.: /bookstore/book[position()<2]
+
+1.7. Devolver o número de elementos que o documento contém;
+R.: count(/bookstore/book)
+
+1.8. Do primeiro livro, devolver o seu segundo elemento; 
+R.: /bookstore/book[1]/child::*[position() = 2]
+
+1.9. Devolver os livros que contenham “ay” ou “ry” no seu título (title);
+R.: /bookstore/book[contains(title, 'ay')]/title/text() | /bookstore/book[contains(title, 'ry')]/title/text()

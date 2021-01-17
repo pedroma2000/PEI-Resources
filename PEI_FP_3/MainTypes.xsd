@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    targetNamespace="http://www.estg.pt/MainTypes" xmlns="http://www.estg.pt/MainTypes"
+    xmlns:p="http://www.estg.pt/PizzaTypes"> 
+    
+    <xs:import namespace="http://www.estg.pt/PizzaTypes" schemaLocation="PizzaTypes.xsd"/>
+
+    <xs:element name="menu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pizza" type="p:pizza" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

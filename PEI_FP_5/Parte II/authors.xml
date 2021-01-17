@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<authors>
+    <author>
+        <name>Harold Abelson</name>
+        <books>
+            <isbn>978-0-07-000422-1</isbn>
+            <isbn>978-0-262-01063-4</isbn>
+        </books>
+    </author>
+    <author>
+        <name>Paul Graham</name>
+        <books>
+            <isbn>978-0-13-370875-2</isbn>
+            <isbn>978-0-13-030552-7</isbn>
+            <isbn>978-0-596-00662-4</isbn>
+        </books>
+    </author>
+    <author>
+        <name>Apostolos-Paul Refenes</name>
+        <books>
+            <isbn>978-0-471-94364-8</isbn>
+            <isbn>978-981-02-2819-4</isbn>
+        </books>
+    </author>
+</authors>

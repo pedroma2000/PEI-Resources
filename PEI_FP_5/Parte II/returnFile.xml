@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resumo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="resumoIva.xsd">
+    <taxa tipo="IVACON" codigo="Nor">
+        <valor_iva>21</valor_iva>
+        <total_sem_iva>482.59</total_sem_iva>
+        <total_iva>101.34</total_iva>
+        <total_com_iva>583.93</total_com_iva>
+    </taxa>
+    <taxa tipo="IVACON" codigo="Nor">
+        <valor_iva>21</valor_iva>
+        <total_sem_iva>130</total_sem_iva>
+        <total_iva>27.3</total_iva>
+        <total_com_iva>157.3</total_com_iva>
+    </taxa>
+    <taxa tipo="IVACON" codigo="Nor">
+        <valor_iva>21</valor_iva>
+        <total_sem_iva>2.7</total_sem_iva>
+        <total_iva>.57</total_iva>
+        <total_com_iva>3.27</total_com_iva>
+    </taxa>
+    <taxa tipo="IVACON" codigo="Nor">
+        <valor_iva>21</valor_iva>
+        <total_sem_iva>1093.77</total_sem_iva>
+        <total_iva>229.69</total_iva>
+        <total_com_iva>1323.46</total_com_iva>
+    </taxa>
+    <taxa tipo="IVACON" codigo="Nor">
+        <valor_iva>21</valor_iva>
+        <total_sem_iva>482.59</total_sem_iva>
+        <total_iva>101.34</total_iva>
+        <total_com_iva>583.93</total_com_iva>
+    </taxa>
+    <taxa tipo="IVACON" codigo="Nor">
+        <valor_iva>21</valor_iva>
+        <total_sem_iva>130</total_sem_iva>
+        <total_iva>27.3</total_iva>
+        <total_com_iva>157.3</total_com_iva>
+    </taxa>
+    <taxa tipo="IVACON" codigo="RED">
+        <valor_iva>5</valor_iva>
+        <total_sem_iva>2.7</total_sem_iva>
+        <total_iva>.14</total_iva>
+        <total_com_iva>2.84</total_com_iva>
+    </taxa>
+</resumo>

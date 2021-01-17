@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<AuditFile xmlns="urn:OECD:StandardAuditFile-Tax:PT_1.00_01">
+  <SourceDocuments>
+    <SalesInvoices>
+      <NumberOfEntries>2</NumberOfEntries>
+      <TotalDebit>0</TotalDebit>
+      <TotalCredit>615.29</TotalCredit>
+      <Invoice>
+        <InvoiceNo>NFa 1</InvoiceNo>
+        <Period>1</Period>
+        <InvoiceDate>2007-01-24</InvoiceDate>
+        <InvoiceType>Factura</InvoiceType>
+        <SystemEntryDate>2007-01-24T15:37:50</SystemEntryDate>
+        <TransactionID></TransactionID>
+        <CustomerID>123456789</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>PR LJ5P</ProductCode>
+          <ProductDescription>Impressora Laser Jet 5P</ProductDescription>
+          <Quantity>1</Quantity>
+          <UnitOfMeasure>Unid</UnitOfMeasure>
+          <UnitPrice>482.59</UnitPrice>
+          <TaxPointDate>2007-01-24</TaxPointDate>
+          <Description>Impressora Laser Jet 5P</Description>
+          <DebitAmount>0</DebitAmount>
+          <CreditAmount>482.59</CreditAmount>
+          <Tax>
+            <TaxType>IVACON</TaxType>
+            <TaxCode>Nor</TaxCode>
+            <TaxPercentage>21</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <Line>
+          <LineNumber>2</LineNumber>
+          <ProductCode>PR 720C</ProductCode>
+          <ProductDescription>Impressora Jet 720C</ProductDescription>
+          <Quantity>1</Quantity>
+          <UnitOfMeasure>Unid</UnitOfMeasure>
+          <UnitPrice>130</UnitPrice>
+          <TaxPointDate>2007-01-24</TaxPointDate>
+          <Description>Impressora Jet 720C</Description>
+          <DebitAmount>0</DebitAmount>
+          <CreditAmount>130</CreditAmount>
+          <Tax>
+            <TaxType>IVACON</TaxType>
+            <TaxCode>Nor</TaxCode>
+            <TaxPercentage>21</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>128.64</TaxPayable>
+          <NetTotal>612.59</NetTotal>
+          <GrossTotal>741.23</GrossTotal>
+        </DocumentTotals>
+      </Invoice>
+      <Invoice>
+        <InvoiceNo>NFa 2</InvoiceNo>
+        <Period>9</Period>
+        <InvoiceDate>2007-09-28</InvoiceDate>
+        <InvoiceType>Factura</InvoiceType>
+        <SystemEntryDate>2007-09-28T15:31:21</SystemEntryDate>
+        <TransactionID></TransactionID>
+        <CustomerID>987654321</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>OT Canetas</ProductCode>
+          <ProductDescription>Canetas</ProductDescription>
+          <Quantity>2</Quantity>
+          <UnitOfMeasure>Unid</UnitOfMeasure>
+          <UnitPrice>1.35</UnitPrice>
+          <TaxPointDate>2007-09-28</TaxPointDate>
+          <Description>Canetas</Description>
+          <DebitAmount>0</DebitAmount>
+          <CreditAmount>2.7</CreditAmount>
+          <Tax>
+            <TaxType>IVACON</TaxType>
+            <TaxCode>RED</TaxCode>
+            <TaxPercentage>5</TaxPercentage>
+          </Tax>
+          <SettlementAmount>0</SettlementAmount>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>.57</TaxPayable>
+          <NetTotal>2.7</NetTotal>
+          <GrossTotal>3.27</GrossTotal>
+        </DocumentTotals>
+      </Invoice>
+    </SalesInvoices>
+  </SourceDocuments>
+</AuditFile>

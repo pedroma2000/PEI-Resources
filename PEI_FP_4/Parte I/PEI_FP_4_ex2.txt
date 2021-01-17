@@ -1,0 +1,39 @@
+XQuery
+2.1. Todos os cds lançados entre 1980 e 1990, ordenados pelo ano de lançamento
+R.: for $x in doc("cd_catalog.xml")//CD
+where $x/YEAR>1980 and $x/YEAR<1990
+order by $x/YEAR
+return <CD>{$x/TITLE, $x/ARTIST, $x/COUNTRY, $x/COMPANY, $x/PRICE, $x/YEAR}</CD>
+
+for $x in doc("cd_catalog.xml")//CD
+where $x/YEAR>1980 and $x/YEAR<1990
+order by $x/YEAR
+return $x
+
+2.2. O título (Title) e preço (Price) para os CDs dos anos 90.
+R.: for $x in doc("cd_catalog.xml")//CD
+where $x/YEAR>1989 and $x/YEAR<2000
+return <CD>{$x/TITLE, $x/PRICE}</CD>
+
+2.3. Contar o número de CDs armazenados no documento.
+R.: for $x in doc("cd_catalog.xml")//CATALOG
+let $c := $x/CD
+return <Total>{count($c)}</Total>
+
+2.4. A lista de todos os CDs (title, year, price) assim como a “idade” de cada CD (tendo em conta o ano atual). O resultado deverá ser apresentado utilizando um elemento: <AGE>. 
+R.: for $x in doc("cd_catalog.xml")//CD
+let $c := 2020 - $x/YEAR
+return <CD>{$x/TITLE, $x/PRICE, $x/YEAR, <AGE>{$c}</AGE>}</CD>
+
+2.5. O número de autores (ARTIST) existentes. Retorne um documento XML válido.
+R.: for $x in doc("cd_catalog.xml")//CATALOG
+let $c := $x/CD/ARTIST
+return <NumberArtists>{count($c)}</NumberArtists>
+
+Para aparecer o nome dos artistas:
+<CATALOG>
+{
+    for $x in doc("cd_catalog.xml")//CD
+    return <CD>{$x/ARTIST}</CD>
+}
+</CATALOG>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ficha de trabalho 2, exercício 1 e 2 -->
+<emails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PEI_FP_2_ex1.xsd">
+    <email type="Personal">
+        <to>tove@gmail.com</to>
+        <from>jan@gmail.comi</from>
+        <date format="yyyy/mm/dd hh:mm">2017/10/02</date>
+        <heading>Reunião</heading>
+        <body>Olá, tudo bem?</body>
+    </email>
+    
+    <email type="Profissional">
+        <to>tove@gmail.com</to>
+        <from>jani@gmail.com</from>
+        <date format="yyyy/mm/dd hh:mm">2017/10/02</date>
+        <heading>Reunião</heading>
+        <body>Trabalho</body>
+    </email>
+</emails>

@@ -1,0 +1,22 @@
+1.1 - Crie uma função XQuery que receba como parâmetro o nome de um autor e retorne apenas os livros desse
+autor;
+R.: 
+declare function local:books-by-author($name) as element()* {
+for $b in doc("bookstore.xml")//book
+where some $a in $b//author satisfies ($a=$name)
+order by $b/title
+return $b/title
+};
+let $n :=  local:books-by-author("James McGovern")
+return $n
+
+1.2 - Crie uma função que receba como parâmetro uma categoria de livros e retorne a lista completa de livros se pelo
+menos um deles pertencer à categoria recebida por parâmetro (ver expressões quantificadas).
+R.: 
+declare function local:category($name) as element()* {
+for $b in doc("bookstore.xml")//book
+where some $a in $b/[@category] satisfies ($a=$name)
+return $b
+};
+let $n :=  local:category("WEB")
+return $n

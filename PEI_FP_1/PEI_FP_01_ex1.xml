@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="PEI_FP_01_ex1.xsd">
+    <email>
+        <to>Tove@gmail.com</to>
+        <from>Jani@gmail.com</from>
+        <heading>Reminder</heading>
+        <type>Personal</type>
+        <body>Don’t forget me this weekend!</body>
+    </email>
+    
+    <email>
+        <to>Tove@gmail.com</to>
+        <from>Mari@gmail.com</from>
+        <heading>Important</heading>
+        <type>Work</type>
+        <body>Tomorrow the reunion is at 3pm.</body>
+    </email>
+</emails>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xs:element name="resumo" type="resumoType" />
+    <xs:complexType name="resumoType">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="taxa" type="taxaType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="taxaType">
+        <xs:sequence>
+            <xs:element name="valor_iva" type="xs:float"/>
+            <xs:element name="total_sem_iva" type="xs:float"/>
+            <xs:element name="total_iva" type="xs:float"/>
+            <xs:element name="total_com_iva" type="xs:float"/>
+        </xs:sequence>
+        <xs:attribute name="tipo" type="xs:string"/>
+        <xs:attribute name="codigo" type="xs:string"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    targetNamespace="http://www.estg.pt/Main" xmlns:common="http://www.estg.pt/CommonTypes"
+    xmlns:customer="http://www.estg.pt/CustomerTypes"
+    xmlns:product="http://www.estg.pt/ProductTypes" xmlns="http://www.estg.pt/Main">
+
+    <xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.estg.pt/CommonTypes"/>
+    <xs:import schemaLocation="ProductTypes.xsd" namespace="http://www.estg.pt/ProductTypes"/>
+    <xs:import schemaLocation="CustomerTypes.xsd" namespace="http://www.estg.pt/CustomerTypes"/>
+
+    <xs:element name="faturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fatura">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="billing_address" type="customer:billingAddress"/>
+                            <xs:element name="shipping_address" type="customer:shippingAddress"/>
+                            <xs:element name="data" type="common:data"/>
+                            <xs:element name="products" type="product:products"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+</xs:schema>

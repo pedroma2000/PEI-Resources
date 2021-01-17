@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    xmlns="http://www.estg.pt/ProductTypes"
+    targetNamespace="http://www.estg.pt/ProductTypes" 
+    xmlns:c="http://www.estg.pt/CommonTypes"> 
+    
+    <xs:complexType name="products">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element name="product" type="product_type"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="product_type">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="quantity" type="xs:integer"/>
+            <xs:element name="price" type="price" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="price">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="coin" type="xs:string" default="EUR"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

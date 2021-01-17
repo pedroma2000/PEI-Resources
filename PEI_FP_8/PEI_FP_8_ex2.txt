@@ -1,0 +1,21 @@
+Ex 2 (cmd -> mongo)
+Retornar todos os produtos
+R.: db.PEI_FP_8_ex2.find()
+
+Retornar os produtos do tipo smartphone
+R.: db.PEI_FP_8_ex2.find({Tipo: "Smartphone"})
+
+Retornar os produtos do tipo smartphone e da marca Huawei
+R.: db.PEI_FP_8_ex2.find({Tipo: "Smartphone", Marca: "Huawei"})
+
+Retornar os produtos que possuem um ecrã: LCD (consulta sobre um documento embutido)
+R.: db.PEI_FP_8_ex2.find({"Ecrã.Tecnologia": "LCD"})
+
+Retornar os produtos que possuem um ecrã com mais de 5.5 polegadas (consulta sobre um
+documento embutido)
+R.: db.PEI_FP_8_ex2.find({"Ecrã.Diagonal": {"$gt": 5.5}})
+
+(link with comparison operators: https://www.ibm.com/support/knowledgecenter/SSEPGG_11.5.0/com.ibm.swg.im.dbclient.json.doc/doc/r0061296.html)
+
+Retornar os produtos que possuem a cor Azul (consulta sobre um array)
+R.: db.PEI_FP_8_ex2.find({"Cores": "Azul"})

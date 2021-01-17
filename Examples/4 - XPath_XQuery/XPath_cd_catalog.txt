@@ -1,0 +1,17 @@
+Todos os cds em que o “Country” = ‘USA’
+R.: /CATALOG/CD[COUNTRY="USA"]
+
+Todos os cds com um preço inferior a 10 euros
+R.: /CATALOG/CD[PRICE>10.0]
+
+Todos os cds lançados entre 1980 e 1990
+R.: /CATALOG/CD[YEAR>1980 and YEAR<1990]
+
+Mostrar apenas o nome de cada CD
+R.: /CATALOG/CD/TITLE/text()
+
+Os títulos dos CDs dos artistas em que o nome começa por ‘B’
+R.: //TITLE/starts-with(., 'B')
+
+Contar o número de CDs armazenados no documento
+R.: count(//CD)

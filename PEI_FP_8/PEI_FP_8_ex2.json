@@ -1,0 +1,25 @@
+{
+    "produto 1":{
+        "Marca": "Samsung",
+        "Modelo": "Galaxy",
+        "Tipo": "Tablet"
+    },
+
+    "produto 2":{
+        "Marca": "Huawei",
+        "Modelo": "P40",
+        "Tipo": "Smartphone",
+        "Cores": ["Azul", "Preto", "Vermelho"]
+    },
+
+    "produto 3":{
+        "Marca": "Huawei",
+        "Modelo": "P40 lite",
+        "Tipo": "Smartphone",
+        "Ecrã": {
+            "Diagonal": 6.4,
+            "Tecnologia": "LCD",
+            "Resolução": "FULL HD+"
+        }
+    }
+}

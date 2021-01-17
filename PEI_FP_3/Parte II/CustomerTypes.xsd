@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" 
+    targetNamespace="http://www.estg.pt/CustomerTypes"
+    xmlns="http://www.estg.pt/CustomerTypes"
+    xmlns:c="http://www.estg.pt/CommonTypes"> 
+    
+    <xs:import namespace="http://www.estg.pt/CommonTypes" schemaLocation="CommonTypes.xsd"/>
+    
+    <xs:complexType name="shippingAddress">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="postal_code" type="c:postal_code"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="country" type="c:country"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="billingAddress">
+        <xs:sequence>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="number" type="xs:integer"/>
+            <xs:element name="postal_code" type="c:postal_code"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="country" type="c:country"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!--  
+    <xs:complexType name="address">
+        <xs:sequence>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="number" type="xs:integer"/>
+            <xs:element name="postal-code" type="c:postal_code"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="country" type="c:country"/>
+        </xs:sequence>
+    </xs:complexType> 
+    -->
+</xs:schema>

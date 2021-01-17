@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ingredientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="PEI_FP_01_ex2.xsd">
+
+    <ingredient>
+        <name>Spinach</name>
+        <categories>Vegetal</categories>
+        <calories unit="grams">18</calories>
+    </ingredient>
+
+    <ingredient>
+        <name>Cheese</name>
+        <categories>Dairy</categories>
+        <calories unit="grams">25</calories>
+    </ingredient>
+
+    <ingredient>
+        <name>Tomato Sauce</name>
+        <categories>Sauce</categories>
+        <calories unit="mililiters">40</calories>
+    </ingredient>
+
+    <ingredient>
+        <name>Oregano</name>
+        <categories>Herb</categories>
+        <calories unit="grams">45</calories>
+    </ingredient>
+
+    <ingredient>
+        <name>Chicken</name>
+        <categories>Meat</categories>
+        <calories unit="grams">32</calories>
+    </ingredient>
+
+    <ingredient>
+        <name>Onion Sauce</name>
+        <categories>Sauce</categories>
+        <calories unit="mililiters">55</calories>
+    </ingredient>
+
+    <ingredient>
+        <name>Pasta</name>
+        <categories>Pasta</categories>
+        <calories unit="grams">43</calories>
+    </ingredient>
+</Ingredientes>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:json xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:a="http://www.amiibo.com/amiibo"
+    xsi:schemaLocation="http://www.amiibo.com/amiibo amiiboSchema.xsd">
+    
+    <jsonType type="object">
+        <amiibo type="array">
+            <_ type="object">
+                <amiiboSeries>Super Smash Bros.</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00010002.png</image>
+                <name>Peach</name>
+                <type>Figure</type>
+            </_>
+            <_ type="object">
+                <amiiboSeries>Super Mario Bros.</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00360102.png</image>
+                <name>Peach</name>
+                <type>Figure</type>
+            </_>
+            <_ type="object">
+                <amiiboSeries>Super Mario Bros.</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-03720102.png</image>
+                <name>Peach - Wedding</name>
+                <type>Figure</type>
+            </_>
+            <_ type="object">
+                <amiiboSeries>Mario Sports Superstars</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20101-02730e02.png</image>
+                <name>Peach - Soccer</name>
+                <type>Card</type>
+            </_>
+            <_ type="object">
+                <amiiboSeries>Mario Sports Superstars</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20201-02740e02.png</image>
+                <name>Peach - Baseball</name>
+                <type>Card</type>
+            </_>
+            <_ type="object">
+                <amiiboSeries>Mario Sports Superstars</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20301-02750e02.png</image>
+                <name>Peach - Tennis</name>
+                <type>Card</type>
+            </_>
+            <_ type="object">
+                <amiiboSeries>Mario Sports Superstars</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20401-02760e02.png</image>
+                <name>Peach - Golf</name>
+                <type>Card</type>
+            </_>
+            <_ type="object">
+                <amiiboSeries>Mario Sports Superstars</amiiboSeries>
+                <image>https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20501-02770e02.png</image>
+                <name>Peach - Horse Racing</name>
+                <type>Card</type>
+            </_>
+        </amiibo>
+    </jsonType>
+</a:json>
+

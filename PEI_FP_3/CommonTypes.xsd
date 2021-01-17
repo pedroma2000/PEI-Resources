@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    xmlns="http://www.estg.pt/CommonTypes" targetNamespace="http://www.estg.pt/CommonTypes">
+
+    <xs:annotation>
+        <xs:documentation>Padrão para as siglas da pizza</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="sigla">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z])*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:annotation>
+        <xs:documentation>Restrições para os tibos de base da pizza</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="base">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="tiny"/>
+            <xs:enumeration value="crispy"/>
+            <xs:enumeration value="lean"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:annotation>
+        <xs:documentation>Moeda utilizada</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="price">
+        <xs:sequence>
+            <xs:element name="small" type="xs:decimal"/>
+            <xs:element name="medium" type="xs:decimal"/>
+            <xs:element name="big" type="xs:decimal"/>
+        </xs:sequence>
+        <xs:attribute name="moeda">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="€"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>

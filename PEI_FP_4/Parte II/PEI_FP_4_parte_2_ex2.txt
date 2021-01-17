@@ -1,0 +1,52 @@
+2.1. Todos os livros com um preço entre 30 e 100 euros;
+R.:
+for $x in doc("bookstore.xml")/bookstore/book
+where $x/price>30 and $x/price<100
+order by $x/title
+return $x/title
+
+2.2. Um documento com os títulos dos livros e o seu preço. Os dados dos livros devem ser apresentados de forma ordenada alfabeticamente pelo título;
+R.:
+for $b in doc("bookstore.xml")//book
+order by $b/title
+return <quote>{$b/title, $b/price}</quote>
+
+2.3. Apresentar todos os livros e o número de autores de cada um;
+R.:
+for $b in doc("bookstore.xml")//book
+let $c := $b//author
+return <book> { $b/title, <numberAuthors>{ count($c) }</numberAuthors>} </book>
+
+2.4. Apresentar o título de cada livro utilizando um elemento: <Titulo>. Associado a este elemento, crie um atributo indicando a posição do livro na série retornada pela consulta;
+R.:
+for $t at $i in doc("bookstore.xml")//title
+return <Título pos="{$i}">{data($t)}</Título>
+
+2.5. Apresentar todos os livros (todos os elementos). Para os livros da categoria: WEB, deve ser aplicado um desconto de 15%;
+R.: 
+for $b in doc("bookstore.xml")//book[@category='WEB']
+let $i := $b/price * 0.85
+return <books>{$b/title, <newPrice>{$i}</newPrice>}</books>
+
+2.6. Escreva uma transformação XQuery que permita obter um novo documento XML de acordo com a estrutura do documento em anexo: newBookStore.xml.
+R.: 
+element htlm{
+  element body{
+    element h1{
+      "Bookstore"
+    },
+    element table{
+      element tr {
+        <td>Titulo</td>,
+        <td>Year</td>,
+        <td>Price</td>
+      }, 
+      for $book in bookstore/book
+      return element tr{
+        <td>{$book/title/text()}</td>,
+        <td>{$book/year/text()}</td>,
+        <td>{$book/price/text()}</td>
+      }
+    }
+  }
+}

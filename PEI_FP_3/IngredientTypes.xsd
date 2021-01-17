@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified"
+    targetNamespace="http://www.estg.pt/IngredientTypes" xmlns="http://www.estg.pt/IngredientTypes">
+    
+    <xs:complexType name="topping">
+        <xs:sequence>
+            <xs:element name="ingredient" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

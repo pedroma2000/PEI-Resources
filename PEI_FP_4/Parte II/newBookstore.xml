@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <body>
+        <h1>Bookstore</h1>
+        <table>
+            <tr>
+                <td>Titulo</td>
+                <td>Year</td>
+                <td>Price</td>
+            </tr>
+            <tr>
+                <td>30 Dias para Mudar de Vida, Detox Paleo</td>
+                <td>2016</td>
+                <td>12.79</td>
+            </tr>
+            <tr>
+                <td>Everyday Italian</td>
+                <td>2005</td>
+                <td>30.00</td>
+            </tr>
+            <tr>
+                <td>Harry Potter</td>
+                <td>2005</td>
+                <td>29.99</td>
+            </tr>
+            <tr>
+                <td>I Wish You More</td>
+                <td>2015</td>
+                <td>12.95</td>
+            </tr>
+            <tr>
+                <td>Learning XML</td>
+                <td>2003</td>
+                <td>39.95</td>
+            </tr>
+            <tr>
+                <td>MongoDB: The Definitive Guide</td>
+                <td>2010</td>
+                <td>51.25</td>
+            </tr>
+            <tr>
+                <td>XML In A Nutshell</td>
+                <td>2001</td>
+                <td>9.95</td>
+            </tr>
+            <tr>
+                <td>XQuery Kick Start</td>
+                <td>2003</td>
+                <td>49.99</td>
+            </tr>
+        </table>
+    </body>
+</html>

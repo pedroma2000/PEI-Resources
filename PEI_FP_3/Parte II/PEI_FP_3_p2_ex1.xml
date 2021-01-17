@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i:faturas  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:i="http://www.estg.pt/Main"
+    xsi:schemaLocation="http://www.estg.pt/Main Main.xsd">
+    <fatura>
+        <billing_address>
+            <address>Rua Dr. Roberto Frias</address>
+            <number>712</number>
+            <postal_code>4200-465</postal_code>
+            <city>Porto</city>
+            <country>Portugal</country>
+        </billing_address>
+
+        <shipping_address>
+            <name>Escola Superior de Tecnologia e Gestão</name>
+            <address>Rua do Curral, Casa do Curral</address>
+            <postal_code>4610-156</postal_code>
+            <city>Felgueiras</city>
+            <country>Portugal</country>
+        </shipping_address>
+
+        <data>
+            <id>1000254</id>
+            <date format="yyyy/mm/dd">2019/05/05</date>
+            <payment>Transferência</payment>
+        </data>
+
+        <products>
+            <product>
+                <name>Router Asus</name>
+                <quantity>50</quantity>
+                <price coin="EUR">53.99</price>
+            </product>
+
+            <product>
+                <name>Desktop DELL REF:4323E</name>
+                <quantity>20</quantity>
+                <price coin="EUR">890.88</price>
+            </product>
+        </products>
+    </fatura>
+</i:faturas>

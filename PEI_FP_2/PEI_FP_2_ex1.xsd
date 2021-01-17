@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ficha de trabalho 2, exercício 1 e 2 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="emails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="email" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="to">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-z]+@[a-z]+.+[a-z]+"/>
+                                        <!-- <xs:pattern value="[^@]+@[^\.]+\..+"/> -->
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="from">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-z]+@[a-z]+.+[a-z]+"/>
+                                        <!-- <xs:pattern value="[^@]+@[^\.]+\..+"/> -->
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="date" minOccurs="0" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="format" use="required">
+                                                <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="yyyy/mm/dd hh:mm"/>
+                                                  </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- para definir elementos opcional é usando maxOccurs e minOccurs -->
+                            <xs:element name="heading" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <!-- maxOccurs=1 e minOccurs=0 implica que serja opcional -->
+                            <xs:element name="body" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <!-- o use="required" só se usa em atributos -->
+                        </xs:sequence>
+                        <xs:attribute name="type" use="required">
+                            <!-- a tua restrição é relativamente ao atributo (Valores aceites pelo mesmo) e não ao elemento email -->
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Personal"/>
+                                    <xs:enumeration value="Profissional"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

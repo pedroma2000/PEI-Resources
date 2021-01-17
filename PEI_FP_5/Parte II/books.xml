@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <title>Structure and Interpretation of Computer Programs</title>
+        <isbn>978-0-07-000422-1</isbn>
+    </book>
+    <book>
+        <title>Turtle Geometry</title>
+        <isbn>978-0-262-01063-4</isbn>
+    </book>
+    <book>
+        <title>ANSI Common LISP</title>
+        <isbn>978-0-13-370875-2</isbn>
+    </book>
+    <book>
+        <title>On LISP</title>
+        <isbn>978-0-13-030552-7</isbn>
+    </book>
+    <book>
+        <title>Hackers and Painters</title>
+        <isbn>978-0-596-00662-4</isbn>
+    </book>
+    <book>
+        <title>Neural Networks in the Capital Markets</title>
+        <isbn>978-0-471-94364-8</isbn>
+    </book>
+    <book>
+        <title>Neural Networks in Financial Engineering</title>
+        <isbn>978-981-02-2819-4</isbn>
+    </book>
+    <book>
+        <title>Handbook of Artificial Intelligence</title>
+        <isbn>978-0-201-16889-1</isbn>
+    </book>
+    <book>
+        <title>Artificial Intelligence Programming</title>
+        <isbn>978-0-89859-609-0</isbn>
+    </book>
+    <book>
+        <title>A New Guide to Artificial Intelligence</title>
+        <isbn>978-0-89391-607-7</isbn>
+    </book>
+    <book>
+        <title>Artificial Intelligence</title>
+        <isbn>978-0-08-034112-5</isbn>
+    </book>
+    <book>
+        <title>Artificial Intelligence</title>
+        <isbn>978-0-631-18385-3</isbn>
+    </book>
+</books>

@@ -1,0 +1,16 @@
+Criar DB no BaseX
+Criar xqm e guardá-lo na pasta webapp
+Abrir basexhttp
+No Postman: colocar POST, link: http://localhost:8984/addcity
+	no body em raw XML:
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+ <soap:Body>
+ <m:CapitalCityResponse xmlns:m="http://www.oorsprong.org/websamples.countryinfo">
+ <m:CapitalCityResult>Lisbon</m:CapitalCityResult>
+ </m:CapitalCityResponse>
+ </soap:Body>
+</soap:Envelope>
+
+Voltar a abrir a DB no BaseX

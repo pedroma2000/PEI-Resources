@@ -1,0 +1,25 @@
+Livros com preço superior a 30:
+for $x in doc("bookstore.xml")/bookstore/book
+where $x/price>30
+order by $x/title
+return $x/title
+
+Transformações:
+for $b in doc("bookstore.xml")//book
+return <quote>{$b/title, $b/price}</quote>
+
+Variável c tem todos os autores do livro b. Será retornado um <book> onde se retorna o título do livro e o número de autores que ele tem:
+for $b in doc("bookstore.xml")//book
+let $c := $b//author
+return <book> { $b/title, <count>{ count($c) }</count>} </book>
+
+Posições dos livros:
+for $t at $i in doc("bookstore.xml")//title
+return <title pos="{$i}">{data($t)}</title>
+
+Divide os livros pelas categorias <children> e <adult>
+for $x in doc("bookstore.xml")/bookstore/book
+return if ($x/@category="CHILDREN")
+then <child>{data($x/title)}</child>
+else <adult>{data($x/title)}</adult>
+

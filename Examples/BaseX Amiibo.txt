@@ -1,0 +1,13 @@
+declare 
+    %updating
+    %rest:path("/InsertAmiiboData") 
+    %rest:PUT("{$body}") 
+    function page:create($body) {
+       file:write("amiibo.xml",$body),
+       db:create('amiibo', 'amiibo.xml', "./"), (: Cria base de dados :)
+       update:output(web:redirect('/app/ok'))
+};
+
+declare %rest:path('/app/ok') function page:ok() {
+  'Stored documents: ' || count(db:open('app'))
+};
